@@ -1,7 +1,13 @@
+import React from "react";
+import SliderCarousel from "./SliderCarousel";
+import Carousel from "./Carousel";
+
 const App = () => {
   return (
     <main>
-      <h2>Slider Starter</h2>
+      
+      {/* <Carousel/> */}
+      <SliderCarousel/>
     </main>
   );
 };

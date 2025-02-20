@@ -1,4 +1,4 @@
-export const shortList = [
+export  const shortList = [
   {
     id: 1,
     image: 'https://www.course-api.com/images/people/person-1.jpeg',
