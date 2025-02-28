@@ -1,5 +1,27 @@
-const App = () => {
-  return <h2>Grocery Bud - Starter</h2>;
-};
+import React from 'react'
+import { useState } from 'react';
+import Form from'./Form'
+import {nanoid} from 'nanoid'
 
-export default App;
+const App = () => {
+  const [items , setItems] = useState([]);
+  const addItem = (itemName) => {
+    const newItem = {
+      name:itemName,
+      completed: false ,
+      id: nanoid()
+    };
+    setItems([...items , newItem])
+  }
+  console.log(items);
+  
+  return (
+    <>
+    <section className="section-center">
+      <Form addItem={addItem} />
+    </section>
+    </>
+  )
+}
+
+export default App
