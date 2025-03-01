@@ -1,4 +1,15 @@
+import Home from "./Home";
+import Model from "./Model";
+import Slidebar from "./Slidebar";
+
 const App = () => {
-  return <h2>Sidebar Starter</h2>;
+  return (
+    <>
+    <Home/>
+    <Model/>
+    <Slidebar/>
+    
+    </>
+  )
 };
 export default App;
